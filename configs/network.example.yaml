@@ -1,0 +1,19 @@
+# Baseline model configuration template.
+model:
+  type: lif
+  time_step_ms: null
+  duration_ms: null
+neuron_parameters:
+  membrane_time_constant_ms: null
+  resting_potential_mV: null
+  threshold_mV: null
+  reset_potential_mV: null
+  refractory_period_ms: null
+synapse_parameters:
+  formulation: pending
+  excitatory_sign_convention: pending
+  inhibitory_sign_convention: pending
+  delay_ms: null
+inputs:
+  protocol: pending
+  description: "Specify source, units, timing and encoding before simulation."
