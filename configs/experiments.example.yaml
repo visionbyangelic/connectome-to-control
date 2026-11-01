@@ -1,0 +1,17 @@
+# Experiment matrix template. Values must be justified in the protocol.
+experiment:
+  name: baseline
+  random_seeds: []
+  repetitions: null
+conditions:
+  - baseline
+  - random_ablation
+  - targeted_ablation
+  - synaptic_weakening
+  - synaptic_enhancement
+controls:
+  degree_matched_randomisation: true
+  parameter_sensitivity: true
+outputs:
+  metrics: []
+  output_directory: results/
