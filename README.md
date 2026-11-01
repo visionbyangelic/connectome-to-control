@@ -1,4 +1,6 @@
 # From Connectome to Control
+<img width="1170" height="639" alt="image" src="https://github.com/user-attachments/assets/08a40667-76e7-4bf4-b308-0502025716bd" />
+
 ### How does the wiring of a neural circuit shape its dynamics, robustness, and sensorimotor function?
 
 <div align="center">
@@ -27,6 +29,8 @@ This project takes a small, biologically meaningful circuit from the fruit fly n
 The central interest is not simply whether the model can produce activity. It is whether the organisation of the biological network makes a measurable difference to that activity, how well the network withstands disruption, and whether those changes matter for a defined sensorimotor task.
 
 The first study will focus on one tractable circuit. A whole-brain simulation is not the starting point.
+
+<img width="1212" height="1297" alt="image" src="https://github.com/user-attachments/assets/ab6be55e-5c94-4eb3-af2f-66913552c75d" />
 
 ---
 
