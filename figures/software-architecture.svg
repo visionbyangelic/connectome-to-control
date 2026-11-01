@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1020"/><stop offset="1" stop-color="#1b2038"/></linearGradient><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#a5b4d4"/></marker></defs>
+<rect width="1400" height="760" rx="28" fill="url(#bg)"/>
+<text x="70" y="72" fill="#f4f7ff" font-family="Arial,sans-serif" font-size="31" font-weight="700">SOFTWARE &amp; RESEARCH ARCHITECTURE</text>
+<text x="70" y="108" fill="#aab6d2" font-family="Arial,sans-serif" font-size="18">Modular pipeline, explicit provenance, and a conditional path to embodied behaviour</text>
+<g font-family="Arial,sans-serif" text-anchor="middle">
+<rect x="490" y="145" width="420" height="75" rx="16" fill="#1d3450" stroke="#43d9c5" stroke-width="2"/><text x="700" y="190" fill="#f4f7ff" font-size="22" font-weight="700">PUBLIC CONNECTOME DATA</text>
+<path d="M700 220 V255" stroke="#a5b4d4" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="490" y="265" width="420" height="75" rx="16" fill="#202c46" stroke="#76a9ef" stroke-width="2"/><text x="700" y="310" fill="#f4f7ff" font-size="22" font-weight="700">INGESTION + PROVENANCE</text>
+<path d="M700 340 V375" stroke="#a5b4d4" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="490" y="385" width="420" height="75" rx="16" fill="#292440" stroke="#b7a9ff" stroke-width="2"/><text x="700" y="430" fill="#f4f7ff" font-size="22" font-weight="700">GRAPH + CIRCUIT ANALYSIS</text>
+<path d="M700 460 V495" stroke="#a5b4d4" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="490" y="505" width="420" height="75" rx="16" fill="#30243a" stroke="#b7a9ff" stroke-width="2"/><text x="700" y="550" fill="#f4f7ff" font-size="22" font-weight="700">SPIKING NEURAL SIMULATION</text>
+<path d="M700 580 V615" stroke="#a5b4d4" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="490" y="625" width="420" height="75" rx="16" fill="#3a2d22" stroke="#f0b56b" stroke-width="2"/><text x="700" y="670" fill="#f4f7ff" font-size="22" font-weight="700">PERTURBATION + EVALUATION</text>
+<rect x="70" y="395" width="300" height="150" rx="18" fill="#18343b" stroke="#55c6a9" stroke-width="2"/><text x="220" y="440" fill="#f4f7ff" font-size="21" font-weight="700">CONFIGS + TESTS</text><text x="220" y="475" fill="#b6d9d2" font-size="15">Parameters • seeds</text><text x="220" y="500" fill="#b6d9d2" font-size="15">Validation • reproducibility</text><path d="M370 470 H480" stroke="#a5b4d4" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="1030" y="395" width="300" height="150" rx="18" fill="#18343b" stroke="#55c6a9" stroke-width="2"/><text x="1180" y="440" fill="#f4f7ff" font-size="21" font-weight="700">EXPERIMENT RECORDS</text><text x="1180" y="475" fill="#b6d9d2" font-size="15">Metrics • logs • metadata</text><text x="1180" y="500" fill="#b6d9d2" font-size="15">Versioned outputs</text><path d="M920 660 H1018 V545" stroke="#a5b4d4" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+<rect x="1030" y="580" width="300" height="120" rx="18" fill="#1d3450" stroke="#76a9ef" stroke-width="2"/><text x="1180" y="625" fill="#f4f7ff" font-size="21" font-weight="700">INTERACTIVE EXPLORER</text><text x="1180" y="657" fill="#c1d4f2" font-size="15">Visualises recorded results</text><path d="M1180 545 V570" stroke="#a5b4d4" stroke-width="2" marker-end="url(#ar)"/>
+<text x="700" y="735" fill="#aab6d2" font-size="14">Optional embodiment adapter is added only after a defensible neural-to-control mapping is established.</text>
+</g></svg>
