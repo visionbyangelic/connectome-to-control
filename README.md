@@ -63,6 +63,14 @@ The question connects four levels of explanation:
 
 ![Conceptual research pathway from connectome structure through neural dynamics and perturbations to functional outcomes](figures/research-concept.svg)
 
+### What is the connectome, computationally?
+
+A connectome is represented here as a directed network. A neuron is a node; a synaptic connection is a directed edge from a presynaptic neuron to a postsynaptic neuron. Edge attributes may include synapse count and neuropil/region metadata where supplied by the dataset.
+
+![Schematic connectome showing neurons as nodes and directed synaptic connections as edges](figures/connectome-anatomy.svg)
+
+*Figure 2. Connectome abstraction used by the project. This is an explanatory schematic, not a reconstruction of a selected biological circuit.*
+
 *Figure 1. Proposed conceptual pathway. This is a research-design illustration, not a result.*
 
 > **In plain English:** We move from the physical wiring, to what the model does, to what happens when we change part of it, and finally to whether those changes affect a measurable task.
@@ -116,11 +124,11 @@ Run controlled interventions, including:
 
 ### Stage E — Evaluate function
 
-Measure neural outcomes in every valid model condition. Evaluate behaviour only if a documented neural-to-control mapping can be established for the selected task. FlyGym / NeuroMechFly is a candidate later-stage environment, not a guaranteed component of the first study.
+Measure neural outcomes in every valid model condition. Evaluate behaviour only if a documented neural-to-control mapping can be established for the selected task. FlyGym / NeuroMechFly v2 is a candidate later-stage environment, not a guaranteed component of the first study. NeuroMechFly v2 provides an embodied Drosophila model with a MuJoCo-based physics simulation, sensory capabilities including vision and olfaction, and support for complex terrain and sensorimotor control. The proposed connectome-constrained controller would need to be integrated through a separately implemented and validated neural-to-control adapter; this is not an automatic or built-in connection.
 
 ![Experimental design showing baseline, targeted perturbation, random controls and network-null comparisons](figures/experimental-design.svg)
 
-*Figure 2. Proposed experimental conditions and comparison logic.*
+*Figure 3. Proposed experimental conditions and comparison logic.*
 
 > **In plain English:** We first build a working model of one circuit. Then we run it normally and under carefully chosen disruptions. We compare those outcomes with random disruptions, so we can tell whether a particular part of the biological network has a distinctive effect.
 
@@ -174,6 +182,14 @@ A behavioural measure will only be used if the model has an explicit, documented
 ## 6. Biological system and dataset strategy
 
 The initial biological system is the adult fruit fly, *Drosophila melanogaster*. The first study will use one selected circuit or subnetwork rather than attempting to model the entire nervous system.
+
+### How FlyWire data are produced
+
+FlyWire's connectome is built from serial electron-microscopy images. AI-assisted image analysis segments neuronal structures; community proofreading corrects and refines reconstructions. Synapse predictions and annotations are then combined into a connectome resource. Codex provides consolidated, versioned snapshots for exploration and analysis, while CAVE supports live proofreading and database-backed workflows.
+
+![FlyWire data production pipeline from electron microscopy through AI-assisted segmentation, human proofreading, synapse annotations and Codex snapshots](figures/flywire-data-pipeline.svg)
+
+*Figure 4. Simplified FlyWire data-production and access pathway. The diagram is an original explanation of the published workflow, not a screenshot of the platform.*
 
 ### Candidate connectome resources
 
@@ -231,13 +247,23 @@ The model will distinguish source-observed anatomical information from inferred 
 
 ---
 
+### NeuroMechFly v2: where the embodied model fits
+
+The embodied stage is intended to close the loop between sensory input, neural control, motor output and the virtual animal's physical state. NeuroMechFly v2 / FlyGym supplies the simulated body, environment, sensors and physics. This project would supply the connectome-constrained neural model and the adapter that translates its outputs into control signals.
+
+The diagram shows the intended research integration, not a claim that a validated connectome-to-FlyGym controller already exists.
+
+![NeuroMechFly v2 embodied sensorimotor loop with environment, sensory input, controller, motor output and MuJoCo body physics](figures/neuromechfly-v2-loop.svg)
+
+*Figure 6. Conceptual NeuroMechFly v2 integration. The dashed link is a proposed project component requiring independent implementation and validation.*
+
 ## 8. Software and research architecture
 
 The codebase is organised into independent scientific components. This allows data processing, graph analysis, neural simulation, perturbation experiments and evaluation to be tested separately.
 
 ![Software architecture showing connectome ingestion, graph analysis, neural simulation, perturbation, experiment records and interactive explorer](figures/software-architecture.svg)
 
-*Figure 3. Planned software and research architecture. The embodiment adapter remains conditional on a valid mapping.*
+*Figure 7. Planned software and research architecture. The embodiment adapter remains conditional on a valid mapping.*
 
 | Component | Responsibility |
 |---|---|
