@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite the repository and any relevant research release."
+title: "From Connectome to Control"
+type: software
+authors:
+  - family-names: Charles
+    given-names: Angelic
+repository-code: "https://github.com/visionbyangelic/connectome-to-control"
+abstract: "A planned computational neuroscience research platform for connectome analysis, spiking neural simulation, controlled perturbation experiments, and conditional embodied sensorimotor modelling."
+keywords:
+  - computational neuroscience
+  - connectomics
+  - spiking neural networks
+  - Drosophila
+  - neural simulation
+  - perturbation analysis
+license: MIT
+version: 0.1.0
