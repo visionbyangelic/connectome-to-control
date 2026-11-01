@@ -12,6 +12,19 @@ This is a living bibliography. Add primary research papers once the biological c
 - [NeuroMechFly documentation](https://neuromechfly.org/) — neuromechanical fly simulation.
 - [FlyGym repository](https://github.com/NeLy-EPFL/flygym) — source code, releases and implementation notes.
 
+## Primary connectome and FlyWire resources
+
+- [Dorkenwald et al. (2024), Neuronal wiring diagram of an adult brain, Nature](https://doi.org/10.1038/s41586-024-07558-y) — flagship FlyWire whole-brain connectome paper.
+- [Codex FAQ](https://codex.flywire.ai/faq) — dataset snapshots, data access, directed connectivity definitions, thresholds and graph representation.
+- [About FlyWire](https://codex.flywire.ai/about_flywire) — source data, proofreading, synapse and annotation provenance.
+- [FlyWire data access and citation guidance](https://join.flywire.ai/guidelines) — attribution and data-use terms.
+
+## NeuroMechFly v2
+
+- [NeuroMechFly v2: simulating embodied sensorimotor control in adult Drosophila, Nature Methods (2024)](https://doi.org/10.1038/s41592-024-02497-y) — vision, olfaction, ascending motor feedback, complex terrains and sensorimotor modelling.
+- [NeuroMechFly v2 documentation](https://neuromechfly.org/) — current FlyGym API and usage documentation.
+- [FlyGym source repository](https://github.com/NeLy-EPFL/flygym) — implementation and release history.
+
 ## Neural simulation
 
 - [Brian2 documentation](https://brian2.readthedocs.io/) — spiking neural network simulator.
