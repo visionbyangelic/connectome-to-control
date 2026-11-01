@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "connectome-to-control"
+version = "0.1.0"
+description = "A research platform for connectome-constrained neural modelling and perturbation analysis."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Angelic Charles" }]
+dependencies = []
+
+[project.optional-dependencies]
+analysis = ["numpy", "scipy", "pandas", "networkx", "matplotlib", "plotly"]
+simulation = ["brian2"]
+ml = ["torch", "scikit-learn"]
+dev = ["pytest", "ruff", "mypy", "jupyter"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
