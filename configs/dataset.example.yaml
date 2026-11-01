@@ -1,0 +1,13 @@
+# Example only. Confirm the live resource, snapshot and access terms before use.
+source: flywire_codex
+dataset_version: null
+retrieved_at: null
+circuit:
+  name: pending_circuit_selection
+  inclusion_criteria: []
+filters:
+  minimum_synapse_count: null
+  neuron_types: []
+provenance:
+  source_url: https://codex.flywire.ai/
+  notes: "Do not assume candidate snapshot IDs remain current."
