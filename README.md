@@ -215,18 +215,22 @@ The selected circuit must be defensible against the following criteria:
 
 Every derived dataset will retain its source, snapshot identifier, retrieval date, filtering rules, inclusion/exclusion counts, annotation missingness, transformation history and software versions.
 
+
+![Circuit selection decision process showing biological, data, functional and modelling feasibility gates](figures/circuit-selection.svg)
+
+*Figure 5. Circuit selection is a gated decision. A critical weakness in functional evidence or a defensible input/output mapping can outweigh a high score elsewhere.*
 > **In plain English:** We will choose the circuit based on the quality of its data and how much scientists already know about its function. The dataset choice is a research decision, not just a technical convenience.
 
 ---
 
 ## 7. Neural model: how anatomy becomes dynamics
 
-The initial candidate is a leaky integrate-and-fire model. For neuron (i), a standard membrane formulation is:
+The initial candidate is a leaky integrate-and-fire model. For neuron \(i\), a standard membrane formulation is:
 
-[
-	au_m rac{dV_i}{dt}
-= -(V_i - V_{mathrm{rest}}) + R_m I_i(t)
-]
+\[
+\tau_m \frac{dV_i}{dt}
+= -(V_i - V_{\mathrm{rest}}) + R_m I_i(t)
+\]
 
 A neuron emits a spike when its membrane potential reaches threshold. The model then applies a reset and, if specified, a refractory period.
 
