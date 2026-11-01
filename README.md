@@ -63,6 +63,8 @@ The question connects four levels of explanation:
 
 ![Conceptual research pathway from connectome structure through neural dynamics and perturbations to functional outcomes](figures/research-concept.svg)
 
+*Figure 1. Proposed conceptual pathway. This is a research-design illustration, not a result.*
+
 ### What is the connectome, computationally?
 
 A connectome is represented here as a directed network. A neuron is a node; a synaptic connection is a directed edge from a presynaptic neuron to a postsynaptic neuron. Edge attributes may include synapse count and neuropil/region metadata where supplied by the dataset.
@@ -70,8 +72,6 @@ A connectome is represented here as a directed network. A neuron is a node; a sy
 ![Schematic connectome showing neurons as nodes and directed synaptic connections as edges](figures/connectome-anatomy.svg)
 
 *Figure 2. Connectome abstraction used by the project. This is an explanatory schematic, not a reconstruction of a selected biological circuit.*
-
-*Figure 1. Proposed conceptual pathway. This is a research-design illustration, not a result.*
 
 > **In plain English:** We move from the physical wiring, to what the model does, to what happens when we change part of it, and finally to whether those changes affect a measurable task.
 
